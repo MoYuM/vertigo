@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>adidas 官方商城 | IMPOSSIBLE IS NOTHING</title>
+<meta name="description" content="一件关于眩晕的数字作品。你用得越久，它坏得越深。" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><g fill='%23fff'><rect x='20' y='58' width='13' height='24' transform='skewX(-14)'/><rect x='42' y='42' width='13' height='40' transform='skewX(-14)'/><rect x='64' y='26' width='13' height='56' transform='skewX(-14)'/></g></svg>" />
+<link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="pristine">
+
+<!-- ══ 崩坏后期层：拖影 / 隧道 / 递归 ══ -->
+<canvas id="fx" aria-hidden="true"></canvas>
+
+<!-- ══ 站点本体 ══ -->
+<div id="site">
+
+  <div class="promo" data-piece>
+    <span data-shatter>免费配送 · 会员专享 30 天无理由退货</span>
+  </div>
+
+  <header class="nav" data-piece>
+    <a class="brand" href="#" aria-label="adidas" data-piece>
+      <svg class="stripes" viewBox="0 0 68 44" aria-hidden="true">
+        <g fill="currentColor">
+          <path d="M2 44 22 44 8 20 0 34z"/>
+          <path d="M23 44 43 44 22 8 14 22z"/>
+          <path d="M44 44 64 44 36 -4 28 10z"/>
+        </g>
+      </svg>
+      <span class="wordmark" data-shatter>adidas</span>
+    </a>
+    <nav class="menu">
+      <a href="#" data-shatter>男子</a>
+      <a href="#" data-shatter>女子</a>
+      <a href="#" data-shatter>童装</a>
+      <a href="#" data-shatter>运动鞋</a>
+      <a href="#" data-shatter>三叶草</a>
+      <a href="#" class="sale" data-shatter>折扣</a>
+    </nav>
+    <div class="tools">
+      <span class="search" data-piece><input type="text" placeholder="搜索" readonly /></span>
+      <a href="#" data-piece>登录</a>
+      <a href="#" data-piece>收藏</a>
+      <a href="#" class="cart" data-piece>购物车 <b>0</b></a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-art" aria-hidden="true" data-piece>
+      <div class="hero-bars"><i></i><i></i><i></i></div>
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow" data-shatter>ORIGINALS · 2026 春夏</p>
+      <h1 class="headline" data-shatter>IMPOSSIBLE<br />IS NOTHING</h1>
+      <p class="lede" data-shatter>没有什么是不可能的。<br />包括这个页面。</p>
+      <div class="cta">
+        <a href="#" class="btn btn-dark" data-piece><span data-shatter>立即选购</span></a>
+        <a href="#" class="btn btn-line" data-piece><span data-shatter>了解更多</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品类条 -->
+  <section class="strip">
+    <a href="#" data-piece><span data-shatter>SAMBA</span></a>
+    <a href="#" data-piece><span data-shatter>GAZELLE</span></a>
+    <a href="#" data-piece><span data-shatter>SUPERSTAR</span></a>
+    <a href="#" data-piece><span data-shatter>CAMPUS</span></a>
+    <a href="#" data-piece><span data-shatter>ULTRABOOST</span></a>
+  </section>
+
+  <!-- 产品网格 -->
+  <section class="section">
+    <div class="sec-head" data-piece>
+      <h2 data-shatter>新品上市</h2>
+      <a href="#" class="more" data-shatter>查看全部 →</a>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- 大幅横幅 -->
+  <section class="banner" data-piece>
+    <div class="banner-inner">
+      <p class="eyebrow light" data-shatter>MEMBERS ONLY</p>
+      <h2 data-shatter>加入 adiClub<br />解锁专属礼遇</h2>
+      <a href="#" class="btn btn-light" data-piece><span data-shatter>免费加入</span></a>
+    </div>
+  </section>
+
+  <!-- 第二组产品 -->
+  <section class="section">
+    <div class="sec-head" data-piece>
+      <h2 data-shatter>热销榜</h2>
+      <a href="#" class="more" data-shatter>查看全部 →</a>
+    </div>
+    <div class="grid" id="grid2"></div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="foot">
+    <div class="foot-cols">
+      <div data-piece>
+        <h4 data-shatter>产品</h4>
+        <a href="#" data-shatter>运动鞋</a><a href="#" data-shatter>服装</a>
+        <a href="#" data-shatter>配件</a><a href="#" data-shatter>新品</a>
+      </div>
+      <div data-piece>
+        <h4 data-shatter>运动项目</h4>
+        <a href="#" data-shatter>足球</a><a href="#" data-shatter>跑步</a>
+        <a href="#" data-shatter>篮球</a><a href="#" data-shatter>健身</a>
+      </div>
+      <div data-piece>
+        <h4 data-shatter>企业信息</h4>
+        <a href="#" data-shatter>关于我们</a><a href="#" data-shatter>可持续发展</a>
+        <a href="#" data-shatter>加入我们</a><a href="#" data-shatter>新闻中心</a>
+      </div>
+      <div data-piece>
+        <h4 data-shatter>帮助</h4>
+        <a href="#" data-shatter>配送与退货</a><a href="#" data-shatter>尺码指南</a>
+        <a href="#" data-shatter>联系客服</a><a href="#" data-shatter>常见问题</a>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span data-shatter>© 2026 adidas · 一件关于眩晕的作品</span>
+      <span class="foot-note" data-shatter>此页面不会自我修复</span>
+    </div>
+  </footer>
+
+</div><!-- /#site -->
+
+<!-- ══ 常驻 HUD ══ -->
+<div id="hud" class="hud">
+  <div class="hud-row"><span class="k">前庭稳定度</span><i class="bar"><b id="stability"></b></i><em id="stability-v">100%</em></div>
+</div>
+
+<!-- ══ 终幕：碎片湮灭后，标语字面意义地只剩下 NOTHING ══ -->
+<div id="end" class="end" aria-hidden="true">
+  <div class="end-inner">
+    <p class="end-lead"><span>IMPOSSIBLE</span> <span>IS</span></p>
+    <h2 class="end-word">NOTHING</h2>
+    <p class="end-note">《眩 晕》· 2026</p>
+    <div class="end-more">
+      <p class="end-more-label">我的其他作品</p>
+      <div class="end-more-app">
+        <img class="end-more-icon" src="/src/assets/hedian-icon.png" alt="" width="32" height="32" />
+        <span class="end-more-name">喝点儿</span>
+      </div>
+      <a class="end-more-badge" href="https://apps.apple.com/cn/app/喝点儿/id6761716457" target="_blank" rel="noopener">
+        <img src="https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/black/zh-cn?size=250x83" alt="Download on the App Store" width="109" height="40" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ 入口 ══ -->
+<div id="gate" class="gate">
+  <div class="gate-inner">
+    <div class="gate-mark" aria-hidden="true">
+      <svg viewBox="0 0 68 44"><g fill="currentColor">
+        <path d="M2 44 22 44 8 20 0 34z"/><path d="M23 44 43 44 22 8 14 22z"/><path d="M44 44 64 44 36 -4 28 10z"/>
+      </g></svg>
+    </div>
+    <h1 class="gate-title">眩 晕</h1>
+    <p class="gate-sub">一个你用得越久、就坏得越深的网站</p>
+    <p class="gate-warn">
+      本作品包含持续旋转、闪动与高对比运动画面。<br />
+      光敏性癫痫、前庭疾病及晕动症人群请谨慎进入。
+    </p>
+    <div class="gate-acts">
+      <button id="enter" class="btn btn-dark"><span>进 入</span></button>
+      <button id="enter-safe" class="btn btn-line"><span>静 态 模 式</span></button>
+    </div>
+    <p class="gate-hint" id="gate-hint">向下滚动。它不会恢复。</p>
+  </div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

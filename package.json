@@ -1,0 +1,17 @@
+{
+  "name": "vertigo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:minitool": "vite build --config vite.config.minitool.js",
+    "pack:minitool": "pnpm build:minitool && pnpm audit:minitool && ./scripts/pack-minitool.sh",
+    "audit:minitool": "node scripts/audit-minitool.mjs dist-minitool"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
+  }
+}
